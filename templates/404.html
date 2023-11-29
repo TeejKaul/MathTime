@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>404 Error</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel="icon" type="image/x-icon" href="../static/images/Fevicon.ico">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .error-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorials.html">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <img src="./static/images/404.png" alt="404 Error" class="error-image">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
